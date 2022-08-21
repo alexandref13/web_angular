@@ -1,0 +1,45 @@
+<div class="container">
+  <h2>Users</h2>
+
+  <ul>
+   <div class="user"  *ngFor="let user of users">
+     <li >
+      {{user.name}} - {{user.email}}
+
+      <br>
+
+      {{user.id}} - {{user.cpf}}
+    </li>
+      <div>
+        <button (click)="edit(user.id)"><img src="assets/edit.png"></button>
+        <button (click)="delete(user.id)"><img src="assets/delete.png"></button>
+      </div>
+   </div>
+  </ul>
+
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+    <div>
+      <label for="name">
+        Name
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div>
+      <label for="email">
+        Email
+      </label>
+      <input id="email" type="text" formControlName="email">
+    </div>
+
+    <div>
+      <label for="cpf">
+        Cpf
+      </label>
+      <input id="cpf" type="text" formControlName="cpf">
+    </div>
+
+    <button class="button" type="submit">Adicionar</button>
+  </form>
+</div>

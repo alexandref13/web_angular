@@ -1,0 +1,65 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  .container{
+    border: 1px #000 solid;
+    border-radius: 16px;
+
+    padding: 8px 8px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user{
+    border-radius: 6px;
+    margin-bottom: 8px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    div{
+      padding-left: 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img{
+      width: 20px;
+      height: 20px;
+
+    }
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  h2{
+    color: #000000;
+  }
+
+   button{
+      width: 40px;
+      padding: 2px 8px;
+      background-color: #fff;
+      border: 0;
+      cursor: pointer;
+
+      display: flex;
+      flex-direction: row;
+
+      align-self: center;
+
+    }
+}
